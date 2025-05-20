@@ -426,32 +426,3 @@ Facilitar el cumplimiento de las exigentes directrices europeas
 
 En un mundo donde la nomenclatura farmacéutica se vuelve cada vez más compleja y crítica para la seguridad del paciente, DrugFindr representa no solo una mejora incremental, sino un nuevo paradigma en la aproximación a este desafío técnico. Su enfoque integral, adaptado específicamente al contexto europeo y con capacidades que van significativamente más allá de la mera comparación, lo posiciona como una herramienta fundamental para la industria farmacéutica moderna en Europa.
 
-
-
-
-DrugFindr - Infografía
-
-Infografía interactiva que muestra las capacidades y beneficios de DrugFindr, una solución innovadora para la nomenclatura farmacéutica en Europa.
-
-Características
-
-Diseño moderno y responsivo
-
-Animaciones suaves
-
-Optimizado para todos los dispositivos
-
-Interfaz intuitiva
-
-Tecnologías Utilizadas
-
-HTML5
-
-CSS3
-
-JavaScript
-
-Tailwind CSS
-
-AOS (Animate On Scroll)
-
