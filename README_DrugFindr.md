@@ -1,24 +1,24 @@
-DrugFindr: Una Solución Integral para la Generación y Validación de Nombres Farmacéuticos en el Contexto Europeo
+# DrugFindr: Una Solución Integral para la Generación y Validación de Nombres Farmacéuticos en el Contexto Europeo
 
-1. El Problema Técnico: La Complejidad de Nombrar Medicamentos en la Era Moderna
+# 1. El Problema Técnico: La Complejidad de Nombrar Medicamentos en la Era Moderna
 
 La denominación de medicamentos está lejos de ser un simple ejercicio de marketing. Constituye un componente crítico de la seguridad del paciente y un desafío técnico considerable para la industria farmacéutica. Los nombres de medicamentos que se parecen visualmente o suenan de manera similar (fenómeno conocido como LASA: Look-Alike Sound-Alike) pueden provocar errores de medicación con consecuencias potencialmente graves o fatales.
 
 El problema técnico es multidimensional:
 
-Primero, el espacio nominal disponible se contrae continuamente. Con miles de medicamentos ya en el mercado y cientos de nuevos cada año, encontrar nombres únicos se vuelve exponencialmente más difícil.
+PRIMERO, el espacio nominal disponible se contrae continuamente. Con miles de medicamentos ya en el mercado y cientos de nuevos cada año, encontrar nombres únicos se vuelve exponencialmente más difícil.
 
-Segundo, el contexto regulatorio es extraordinariamente exigente, especialmente en Europa. La Agencia Europea de Medicamentos (EMA) impone criterios rigurosos para la aprobación de nombres, requiriendo evaluaciones exhaustivas de similitud con productos existentes, análisis de Denominaciones Comunes Internacionales (DCI o INN en inglés) y sus "stems" (raíces comunes), y documentación detallada del proceso de evaluación.
+SEGUNDO, el contexto regulatorio es extraordinariamente exigente, especialmente en Europa. La Agencia Europea de Medicamentos (EMA) impone criterios rigurosos para la aprobación de nombres, requiriendo evaluaciones exhaustivas de similitud con productos existentes, análisis de Denominaciones Comunes Internacionales (DCI o INN en inglés) y sus "stems" (raíces comunes), y documentación detallada del proceso de evaluación.
 
-Tercero, la globalización añade capas adicionales de complejidad. Un nombre que funciona en un mercado puede ser problemático en otro debido a diferencias lingüísticas, culturales o regulatorias.
+TERCERO, la globalización añade capas adicionales de complejidad. Un nombre que funciona en un mercado puede ser problemático en otro debido a diferencias lingüísticas, culturales o regulatorias.
 
-Cuarto, el proceso tradicional de desarrollo de nombres es ineficiente, consumiendo considerables recursos humanos y tiempo. Los equipos multidisciplinarios generan manualmente listas de candidatos, realizan análisis preliminares, y frecuentemente enfrentan altas tasas de rechazo regulatorio, requiriendo múltiples iteraciones.
+CUARTO, el proceso tradicional de desarrollo de nombres es ineficiente, consumiendo considerables recursos humanos y tiempo. Los equipos multidisciplinarios generan manualmente listas de candidatos, realizan análisis preliminares, y frecuentemente enfrentan altas tasas de rechazo regulatorio, requiriendo múltiples iteraciones.
 
 Esta constelación de desafíos crea una necesidad urgente: herramientas informáticas avanzadas que no solo comparen nombres, sino que integren la generación con evaluación regulatoria en un flujo de trabajo eficiente y alineado con los exigentes requisitos del mercado europeo.
 
-2. Estado del Arte y sus Limitaciones
+# 2. Estado del Arte y sus Limitaciones
 
-2.1 FDA POCA: El Pionero con Visión Limitada
+# 2.1 FDA POCA: El Pionero con Visión Limitada
 
 El software POCA (Phonetic and Orthographic Computer Analysis) desarrollado por la FDA estadounidense representó un avance significativo en su momento. Esta herramienta compara un nombre propuesto contra una base de datos de nombres aprobados, generando puntuaciones de similitud fonética y ortográfica.
 
@@ -34,7 +34,7 @@ Base de Datos Estática: Su actualización depende exclusivamente de la FDA, imp
 
 Ausencia de Evaluación de Riesgos Estructurada: No proporciona un marco integral para evaluar múltiples factores de riesgo más allá de la similitud fonética/ortográfica.
 
-2.2 LASA Australiano: Un Paso Adelante, Pero Insuficiente
+# 2.2 LASA Australiano: Un Paso Adelante, Pero Insuficiente
 
 La herramienta LASA desarrollada en Australia representa una evolución respecto a POCA, incorporando algoritmos más sofisticados:
 
@@ -56,19 +56,19 @@ Procesamiento Inflexible: No permite actualizar fácilmente las bases de datos o
 
 En resumen, aunque POCA y LASA representaron avances importantes, ninguno ofrece una solución integral para el desafiante contexto europeo, ni abordan la necesidad de asistencia en la fase creativa del proceso de nomenclatura.
 
-3. DrugFindr: Una Solución Integral con Ventajas Técnicas Superiores
+# 3. DrugFindr: Una Solución Integral con Ventajas Técnicas Superiores
 
 DrugFindr ha sido concebido como respuesta directa a estas limitaciones, ofreciendo un sistema integral adaptado específicamente al contexto europeo. Su diseño aborda simultáneamente la generación y evaluación de nombres farmacéuticos, con un enfoque en el cumplimiento de los requisitos de la EMA.
 
-3.1 Arquitectura y Funcionamiento del Sistema
+# 3.1 Arquitectura y Funcionamiento del Sistema
 
 DrugFindr se estructura en módulos interconectados que crean un flujo de trabajo completo y cohesivo:
 
-Interfaz de Usuario y Flujo de Trabajo
+# Interfaz de Usuario y Flujo de Trabajo
 
 La experiencia del usuario con DrugFindr comienza con una interfaz gráfica intuitiva que ofrece dos caminos principales:
 
-Modo Generación: Permite al usuario especificar parámetros para la creación de nuevos nombres.
+# Modo Generación: Permite al usuario especificar parámetros para la creación de nuevos nombres.
 
 El usuario puede indicar un prefijo deseado (ej. "NEX-").
 
@@ -78,7 +78,7 @@ Determina la cantidad de nombres a generar.
 
 Opcionalmente, puede incluir criterios adicionales.
 
-Modo Comparación: Permite evaluar nombres específicos contra las bases de datos.
+# Modo Comparación: Permite evaluar nombres específicos contra las bases de datos.
 
 El usuario introduce el nombre a evaluar.
 
@@ -88,25 +88,25 @@ Establece umbrales de similitud para el filtrado de resultados.
 
 La interfaz también ofrece acceso a:
 
-Gestión de bases de datos (carga y actualización).
+- Gestión de bases de datos (carga y actualización).
 
-Módulo de evaluación de riesgos detallada.
+- Módulo de evaluación de riesgos detallada.
 
-Opciones de generación de informes.
+- Opciones de generación de informes.
 
-Bases de Datos Europeas Actualizables
+- Bases de Datos Europeas Actualizables
 
-Un diferenciador clave de DrugFindr es su uso de bases de datos específicamente europeas:
+- Un diferenciador clave de DrugFindr es su uso de bases de datos específicamente europeas:
 
-EMA.xlsx: Contiene nombres de medicamentos aprobados por la EMA, actualizable por el usuario.
+     - EMA.xlsx: Contiene nombres de medicamentos aprobados por la EMA, actualizable por el usuario.
 
-INN.xlsx: Lista completa de Denominaciones Comunes Internacionales.
+     - INN.xlsx: Lista completa de Denominaciones Comunes Internacionales.
 
-INN stem.xlsx: Catálogo de "stems" o raíces de INN, crítico para el análisis de conformidad.
+     - INN stem.xlsx: Catálogo de "stems" o raíces de INN, crítico para el análisis de conformidad.
 
 Crucialmente, estos archivos pueden ser actualizados directamente por el usuario, asegurando que el sistema se mantenga al día con el dinámico panorama farmacéutico europeo.
 
-3.2 Algoritmos Avanzados: La Base Técnica de DrugFindr
+# 3.2 Algoritmos Avanzados: La Base Técnica de DrugFindr
 
 Análisis Fonético: Más Allá de la Similitud Superficial
 
@@ -384,7 +384,7 @@ Visualizaciones de puntos críticos
 
 Estos informes están estructurados siguiendo las expectativas de documentación de la EMA, facilitando el proceso de sumisión y aprobación regulatoria.
 
-4. Ventajas Comparativas: Por Qué DrugFindr Supera a POCA y LASA
+# 4. Ventajas Comparativas: Por Qué DrugFindr Supera a POCA y LASA
 
 La superioridad técnica de DrugFindr sobre los sistemas existentes se manifiesta en múltiples dimensiones:
 
@@ -406,7 +406,7 @@ Explicabilidad: A diferencia de las "cajas negras", DrugFindr proporciona explic
 
 Preparación Regulatoria: El sistema genera documentación lista para presentaciones a la EMA, reduciendo significativamente el trabajo administrativo.
 
-5. Conclusión: Transformando el Paradigma de Nomenclatura Farmacéutica
+# 5. Conclusión: Transformando el Paradigma de Nomenclatura Farmacéutica
 
 DrugFindr representa un avance transformador en el campo de la nomenclatura farmacéutica, trascendiendo las limitaciones de sistemas anteriores para ofrecer una solución verdaderamente integral al desafío de nombrar medicamentos en el exigente contexto europeo.
 
