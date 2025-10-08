@@ -1,7 +1,5 @@
 # POCA_DrugFindr
-To access the executable (.exe), click on the following link: https://1drv.ms/u/c/37a2e0d88f7a3ba9/EWB1Zdw-O-tHjI2yhONk8GoBoL0GkuB9EJp9dxyO-7GPhQ?e=zIFzaK 
 To access the source code, download the folder and open main.py on your favourite code editor. Please remember you'll need to add your own API Key in the API Key variable located in the api_key.py. 
 
-
-COPYRIGHT (C) DISCLAIMER
-If you wish to use this software for commercial purposes without sharing the derivative code, contact me in order to obtain a commercial license. 
+© 2025 Isaac Yael Sandiumenge Torres \ All rights reserved. 
+This software is protected under a CC BY-NC 4.0. For more information, please visit: https://creativecommons.org/licenses/by-nc/4.0/deed.es. If you wish to use this software for commercial purposes, contact me in order to obtain a commercial license. https://creativecommons.org/licenses/by-nc/4.0/deed.es
